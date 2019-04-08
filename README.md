@@ -1,5 +1,5 @@
 
-# event_push_public
+# event_push_mobile_public
 
 Public version of the event_push mobile application
 
