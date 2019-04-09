@@ -113,7 +113,7 @@ class PushApp extends StatelessWidget {
     if (storeLongLifeKey == false) {
       _clearUserKey();
     } else {
-      _longLifeKey = _prefs.getString(_userKeyPrefs);
+      _longLifeKey = await _prefs.getString(_userKeyPrefs);
     }
 
     //
@@ -124,12 +124,12 @@ class PushApp extends StatelessWidget {
     //
     // bring back last channel
     //
-    _lastChannel = _prefs.getString(_lastChannelPrefs);
+    _lastChannel = await _prefs.getString(_lastChannelPrefs);
 
     //
     // bring back stored pushStyle, default to SSE
     //
-    _pushStyle = _prefs.getInt(_pushStylePrefs);
+    _pushStyle = await _prefs.getInt(_pushStylePrefs);
     if (_pushStyle == null) {
       _pushStyle = 1;
       _setPushStyle(_pushStyle);
@@ -138,7 +138,7 @@ class PushApp extends StatelessWidget {
     //
     // bring back stored URL
     //
-    _channelURL = _prefs.getString(_urlPrefs);
+    _channelURL = await _prefs.getString(_urlPrefs);
 
     //
     // if already configured, start connection
