@@ -1,7 +1,15 @@
 
 # event_push_mobile_public
 
-Public version of the event_push mobile application.  Three 
+Public version of the event_push mobile application.  Three styles of push are
+supported:
+
++ Websockets (ws or wss)
++ Server-send Events (SSE)
++ Long Polling
+
+The style can be chosen from the configuration screen.
+ 
 
 ## Getting Started
 
