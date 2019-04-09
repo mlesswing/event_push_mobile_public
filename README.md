@@ -14,8 +14,9 @@ Public version of the event_push mobile application.  Three
 4) from the WORKING_DIRECTORY
 
 ```
->flutter build apk
->flutter install
+> flutter packages get
+> flutter build apk
+> flutter install
 ```
 
 Contact mark@lesswing.com if you have problems.
